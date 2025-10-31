@@ -1,4 +1,4 @@
-import { Attorney, PracticeArea, Testimonial, ContactInfo } from '../types/index';
+import type { Attorney, PracticeArea, Testimonial, ContactInfo } from '../types/index';
 
 export const contactInfo: ContactInfo = {
   phone: '(513) 382-6543',
