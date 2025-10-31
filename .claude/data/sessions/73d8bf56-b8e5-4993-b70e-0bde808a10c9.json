@@ -2,6 +2,10 @@
   "session_id": "73d8bf56-b8e5-4993-b70e-0bde808a10c9",
   "prompts": [
     "Initialize a git repository and push it up. Use the gh command line. ",
-    "/var/folders/gy/574p89h16mj752hpgdk6_q880000gn/T/TemporaryItems/NSIRD_screencaptureui_nSwv6L/Screenshot\\ 2025-10-31\\ at\\ 6.39.36\u202fPM.png [I"
+    "/var/folders/gy/574p89h16mj752hpgdk6_q880000gn/T/TemporaryItems/NSIRD_screencaptureui_nSwv6L/Screenshot\\ 2025-10-31\\ at\\ 6.39.36\u202fPM.png [I",
+    "Uncaught SyntaxError: The requested module 'http://localhost:5173/src/types/index.ts' doesn't provide an export named: 'PracticeArea'",
+    "@agent-qa-tester-agent ",
+    "Uncaught SyntaxError: The requested module 'http://localhost:5173/src/types/index.ts' doesn't provide an export named: 'PracticeArea'!",
+    "keep going"
   ]
 }
