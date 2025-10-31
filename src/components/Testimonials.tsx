@@ -4,12 +4,12 @@ import { testimonials } from '../data/content';
 
 const Testimonials: React.FC = () => {
   return (
-    <section id="testimonials" className="bg-primary-50 section-padding">
+    <section id="testimonials" className="bg-blue-50 section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            What Our <span className="text-primary-600">Clients Say</span>
+            What Our <span className="text-blue-600">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. See what our satisfied clients have to say 
@@ -23,15 +23,15 @@ const Testimonials: React.FC = () => {
             <div key={testimonial.id} className="card hover:shadow-xl transition-shadow duration-300">
               <div className="p-8">
                 {/* Quote icon */}
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                  <Quote className="w-6 h-6 text-primary-600" />
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                  <Quote className="w-6 h-6 text-blue-600" />
                 </div>
                 
                 {/* Stars */}
                 {testimonial.rating && (
                   <div className="flex space-x-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 fill-gold-400 text-gold-400" />
+                      <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
                 )}
@@ -43,8 +43,8 @@ const Testimonials: React.FC = () => {
                 
                 {/* Author */}
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-primary-600 font-bold text-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-blue-600 font-bold text-lg">
                       {testimonial.author.charAt(0)}
                     </span>
                   </div>
@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
           <div className="flex items-center justify-center mb-6">
             <div className="flex space-x-1 mr-3">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-gold-400 text-gold-400" />
+                <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
               ))}
             </div>
             <span className="text-2xl font-bold text-gray-900">Excellent Reviews</span>
@@ -78,14 +78,14 @@ const Testimonials: React.FC = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="btn-primary">
+            <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
               Schedule Your Free Consultation
             </a>
             <a 
               href="https://www.google.com/search?q=hewitt+foster+legal+cincinnati"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              className="bg-white hover:bg-gray-50 text-blue-600 font-semibold py-3 px-6 rounded-lg border border-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Read More Reviews
             </a>

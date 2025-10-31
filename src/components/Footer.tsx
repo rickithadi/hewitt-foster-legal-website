@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
           {/* Company info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <Scale className="w-8 h-8 text-gold-400 mr-3" />
+              <Scale className="w-8 h-8 text-yellow-400 mr-3" />
               <h3 className="text-xl font-bold">Hewitt Foster Legal Group, LTD</h3>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <a 
                 href={`tel:${contactInfo.phone}`}
-                className="flex items-center text-gray-300 hover:text-gold-400 transition-colors"
+                className="flex items-center text-gray-300 hover:text-yellow-400 transition-colors"
               >
                 <Phone className="w-5 h-5 mr-3" />
                 {contactInfo.phone}
@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
               {contactInfo.alternatePhone && (
                 <a 
                   href={`tel:${contactInfo.alternatePhone}`}
-                  className="flex items-center text-gray-300 hover:text-gold-400 transition-colors"
+                  className="flex items-center text-gray-300 hover:text-yellow-400 transition-colors"
                 >
                   <Phone className="w-5 h-5 mr-3" />
                   {contactInfo.alternatePhone}
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
               )}
               <a 
                 href={`mailto:${contactInfo.email}`}
-                className="flex items-center text-gray-300 hover:text-gold-400 transition-colors"
+                className="flex items-center text-gray-300 hover:text-yellow-400 transition-colors"
               >
                 <Mail className="w-5 h-5 mr-3" />
                 {contactInfo.email}
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
 
           {/* Practice areas */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-gold-400">Practice Areas</h4>
+            <h4 className="text-lg font-semibold mb-6 text-yellow-400">Practice Areas</h4>
             <ul className="space-y-3">
               {practiceAreaLinks.map((link) => (
                 <li key={link.label}>
@@ -109,7 +109,7 @@ const Footer: React.FC = () => {
 
           {/* Quick links */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-gold-400">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-6 text-yellow-400">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
 
           {/* Professional credentials */}
           <div>
-            <h4 className="text-lg font-semibold mb-6 text-gold-400">Professional Credentials</h4>
+            <h4 className="text-lg font-semibold mb-6 text-yellow-400">Professional Credentials</h4>
             <div className="space-y-3">
               {credentials.map((credential) => (
                 <a

@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get Your <span className="text-primary-600">Free Consultation</span>
+            Get Your <span className="text-blue-600">Free Consultation</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We can meet with you at your convenience. Contact us today to schedule your 
@@ -79,7 +79,7 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                       placeholder="(513) 555-0123"
                     />
                   </div>
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                       onChange={handleInputChange}
                       required
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-vertical"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
                       placeholder="Please describe your legal issue or questions..."
                     />
                   </div>
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-primary flex items-center justify-center disabled:opacity-50"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <>
@@ -163,22 +163,22 @@ const Contact: React.FC = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-primary-600" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
                       <div className="space-y-1">
                         <a 
                           href={`tel:${contactInfo.phone}`}
-                          className="block text-primary-600 hover:text-primary-700 font-medium"
+                          className="block text-blue-600 hover:text-blue-700 font-medium"
                         >
                           {contactInfo.phone}
                         </a>
                         {contactInfo.alternatePhone && (
                           <a 
                             href={`tel:${contactInfo.alternatePhone}`}
-                            className="block text-primary-600 hover:text-primary-700 font-medium"
+                            className="block text-blue-600 hover:text-blue-700 font-medium"
                           >
                             {contactInfo.alternatePhone}
                           </a>
@@ -188,14 +188,14 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-primary-600" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                       <a 
                         href={`mailto:${contactInfo.email}`}
-                        className="text-primary-600 hover:text-primary-700 font-medium"
+                        className="text-blue-600 hover:text-blue-700 font-medium"
                       >
                         {contactInfo.email}
                       </a>
@@ -203,8 +203,8 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-primary-600" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
@@ -213,8 +213,8 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-primary-600" />
+                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Availability</h4>
@@ -232,14 +232,14 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <a 
                 href={`tel:${contactInfo.phone}`}
-                className="flex items-center justify-center p-4 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center p-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </a>
               <a 
                 href={`mailto:${contactInfo.email}`}
-                className="flex items-center justify-center p-4 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center p-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg transition-colors duration-200"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Us
