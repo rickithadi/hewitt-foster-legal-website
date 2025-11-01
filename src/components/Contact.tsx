@@ -43,10 +43,10 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Get Your <span className="text-blue-600">Free Consultation</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            Get Your <span className="text-primary-700">Free Consultation</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             We can meet with you at your convenience. Contact us today to schedule your 
             free consultation and get started on your case right away.
           </p>
@@ -56,20 +56,20 @@ const Contact: React.FC = () => {
           {/* Contact form */}
           <div className="card">
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Consultation</h3>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-6">Request a Consultation</h3>
               
               {isSubmitted ? (
                 <div className="text-center py-8">
                   <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-                  <h4 className="text-xl font-bold text-gray-900 mb-2">Thank You!</h4>
-                  <p className="text-gray-600">
+                  <h4 className="text-xl font-bold text-neutral-900 mb-2">Thank You!</h4>
+                  <p className="text-neutral-600">
                     We've received your consultation request and will contact you shortly.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-2">
                       Full Name *
                     </label>
                     <input
@@ -79,13 +79,13 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
                       placeholder="Your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-2">
                       Email Address *
                     </label>
                     <input
@@ -95,13 +95,13 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
                       placeholder="your.email@example.com"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-2">
                       Phone Number *
                     </label>
                     <input
@@ -111,13 +111,13 @@ const Contact: React.FC = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200"
                       placeholder="(513) 555-0123"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-2">
                       Message/Legal Issue *
                     </label>
                     <textarea
@@ -127,7 +127,7 @@ const Contact: React.FC = () => {
                       onChange={handleInputChange}
                       required
                       rows={4}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-vertical"
+                      className="w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors duration-200 resize-vertical"
                       placeholder="Please describe your legal issue or questions..."
                     />
                   </div>
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex items-center justify-center disabled:opacity-50"
+                    className="w-full bg-secondary-600 hover:bg-secondary-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 flex items-center justify-center disabled:opacity-50 shadow-soft hover:shadow-medium transform hover:-translate-y-0.5"
                   >
                     {isSubmitting ? (
                       <>
@@ -163,22 +163,22 @@ const Contact: React.FC = () => {
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-gray-700" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Phone Numbers</h4>
+                      <h4 className="font-semibold text-neutral-900 mb-1">Phone Numbers</h4>
                       <div className="space-y-1">
                         <a 
                           href={`tel:${contactInfo.phone}`}
-                          className="block text-blue-600 hover:text-blue-700 font-medium"
+                          className="block text-neutral-700 hover:text-primary-900 font-medium transition-colors duration-200"
                         >
                           {contactInfo.phone}
                         </a>
                         {contactInfo.alternatePhone && (
                           <a 
                             href={`tel:${contactInfo.alternatePhone}`}
-                            className="block text-blue-600 hover:text-blue-700 font-medium"
+                            className="block text-neutral-700 hover:text-primary-900 font-medium transition-colors duration-200"
                           >
                             {contactInfo.alternatePhone}
                           </a>
@@ -188,14 +188,14 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-primary-700" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
+                      <h4 className="font-semibold text-neutral-900 mb-1">Email</h4>
                       <a 
                         href={`mailto:${contactInfo.email}`}
-                        className="text-blue-600 hover:text-blue-700 font-medium"
+                        className="text-neutral-700 hover:text-primary-900 font-medium transition-colors duration-200"
                       >
                         {contactInfo.email}
                       </a>
@@ -203,22 +203,22 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-primary-700" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Office Address</h4>
-                      <p className="text-gray-600">{contactInfo.address}</p>
+                      <h4 className="font-semibold text-neutral-900 mb-1">Office Address</h4>
+                      <p className="text-neutral-600">{contactInfo.address}</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-primary-700" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-1">Availability</h4>
-                      <p className="text-gray-600">
+                      <h4 className="font-semibold text-neutral-900 mb-1">Availability</h4>
+                      <p className="text-neutral-600">
                         Available by phone and email<br/>
                         Remote and in-person consultations
                       </p>
@@ -232,14 +232,14 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <a 
                 href={`tel:${contactInfo.phone}`}
-                className="flex items-center justify-center p-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center p-4 bg-secondary-600 hover:bg-secondary-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-soft hover:shadow-medium transform hover:-translate-y-0.5"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </a>
               <a 
                 href={`mailto:${contactInfo.email}`}
-                className="flex items-center justify-center p-4 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg transition-colors duration-200"
+                className="flex items-center justify-center p-4 bg-primary-700 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all duration-200 shadow-soft hover:shadow-medium transform hover:-translate-y-0.5"
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email Us

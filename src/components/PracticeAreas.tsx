@@ -10,14 +10,14 @@ const iconComponents = {
 
 const PracticeAreas: React.FC = () => {
   return (
-    <section className="bg-gray-50 section-padding">
+    <section className="bg-neutral-50 section-padding">
       <div className="max-w-7xl mx-auto">
         {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            We Offer A Variety Of <span className="text-blue-600">Legal Aid</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
+            We Offer A Variety Of <span className="text-primary-700">Legal Aid</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
             Trust Hewitt Foster Legal Group with your legal needs. We have experience with 
             traffic, divorce and bankruptcy law in Cincinnati, OH.
           </p>
@@ -29,22 +29,22 @@ const PracticeAreas: React.FC = () => {
             const IconComponent = iconComponents[area.icon as keyof typeof iconComponents];
             
             return (
-              <div key={area.id} className="card hover:shadow-xl transition-shadow duration-300 group">
+              <div key={area.id} className="card hover:shadow-strong transition-all duration-300 group hover:-translate-y-1">
                 <div className="p-8">
                   {/* Icon */}
-                  <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-200 transition-colors duration-300">
-                    <IconComponent className="w-8 h-8 text-blue-600" />
+                  <div className="w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors duration-300">
+                    <IconComponent className="w-8 h-8 text-primary-700" />
                   </div>
                   
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{area.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{area.description}</p>
+                  <h3 className="text-2xl font-bold text-neutral-900 mb-4">{area.title}</h3>
+                  <p className="text-neutral-600 mb-6 leading-relaxed">{area.description}</p>
                   
                   {/* Services list */}
                   <ul className="space-y-2 mb-6">
                     {area.services.map((service, index) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></div>
+                      <li key={index} className="flex items-center text-neutral-700">
+                        <div className="w-2 h-2 bg-secondary-600 rounded-full mr-3 flex-shrink-0"></div>
                         {service}
                       </li>
                     ))}
@@ -53,7 +53,7 @@ const PracticeAreas: React.FC = () => {
                   {/* Learn more link */}
                   <a 
                     href={area.detailUrl}
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold group-hover:translate-x-1 transition-transform duration-300"
+                    className="inline-flex items-center text-primary-700 hover:text-primary-900 font-semibold group-hover:translate-x-1 transition-all duration-300"
                   >
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2" />
@@ -65,20 +65,20 @@ const PracticeAreas: React.FC = () => {
         </div>
 
         {/* Call to action */}
-        <div className="bg-blue-900 rounded-2xl p-8 md:p-12 text-center text-white">
+        <div className="bg-primary-900 rounded-2xl p-8 md:p-12 text-center text-white shadow-strong">
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
             Ready To Get Started?
           </h3>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Request a consultation now to speak with our dedicated attorneys. 
             We can get started on your case right away.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 bg-yellow-500 hover:bg-yellow-600">
+            <a href="#contact" className="bg-secondary-600 hover:bg-secondary-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2 shadow-medium hover:shadow-strong transform hover:-translate-y-0.5">
               Request Free Consultation
             </a>
-            <a href="tel:(513) 382-6543" className="bg-white hover:bg-gray-50 text-blue-600 font-semibold py-3 px-6 rounded-lg border border-blue-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-              Call (513) 382-6543
+            <a href="tel:(513) 382-6543" className="bg-transparent hover:bg-secondary-600 hover:border-secondary-600 text-secondary-400 hover:text-white font-semibold py-3 px-6 rounded-lg border border-secondary-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-secondary-500 focus:ring-offset-2">
+              Call Now (513) 382-6543
             </a>
           </div>
         </div>
